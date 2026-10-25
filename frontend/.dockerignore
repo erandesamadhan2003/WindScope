@@ -1,0 +1,47 @@
+# Dependencies (rebuilt inside Docker)
+node_modules/
+.pnp/
+.pnp.js
+
+# Build output (rebuilt inside Docker)
+dist/
+build/
+
+# Bun
+bun.lockb
+
+# Environment files (injected as ARG at build time)
+.env
+.env.*
+!.env.example
+
+# Dev tools
+.vscode/
+.idea/
+
+# Testing
+coverage/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Docker
+Dockerfile
+nginx.conf
+.dockerignore
+
+# Git
+.git/
+.gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Docs
+*.md
+README*

@@ -1,0 +1,25 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/.env
+backend/*.pyc
+
+# Node / Bun
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/bun.lockb
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
