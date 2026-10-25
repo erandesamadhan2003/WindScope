@@ -1,0 +1,21 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://windscope-0o47.onrender.com/api/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
+    }
+  ]
+}
