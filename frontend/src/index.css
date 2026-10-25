@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b1121;
+  color: #e2e8f0;
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Recharts overrides — make tooltips match our dark theme */
+.recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: #1c2b3a !important;
+  border: 1px solid #1e3a5f !important;
+  border-radius: 8px !important;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: #64748b;
+  font-size: 11px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.recharts-legend-item-text {
+  color: #94a3b8 !important;
+  font-size: 12px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0369a1;
+}
